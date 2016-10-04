@@ -105,3 +105,11 @@ function titleCase(str) {
     
     return arr.join(" ");
 }
+
+//function 12: return the largest number in an array
+function findLargest(arr) {
+    arr.sort(function(a, b) {
+        return b - a;
+    })
+    return arr[0];
+}
