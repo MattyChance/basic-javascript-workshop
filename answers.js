@@ -1,4 +1,4 @@
-//This is answers.js
+//This is answers.jstreetree
 //Function 1: return the first character of a string
 function firstLetter(str) {
     return str.substring(0, 1);
