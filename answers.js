@@ -92,3 +92,16 @@ function getLongest(str) {
     var indexOfTheLongest = arrOfLength.indexOf(Math.max.apply(null, arrOfLength));
     return arr[indexOfTheLongest];
 }
+
+//function 11: capitalize the first letter of each word in a phrase
+function titleCase(str) {
+    var strAllUppercase = str.toUpperCase();
+    
+    var arr = strAllUppercase.split(' ');
+    
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i][0] + arr[i].substr(1).toLowerCase();
+    }
+    
+    return arr.join(" ");
+}
