@@ -12,7 +12,7 @@ function lastCharacter(str) {
 //function 3: return the character at indexOf
 function getCharacter(str, num) {
     str = str.replace(/\s+/g, '');
-    
+
     if (num > 0) {
         return str.substr(num - 1, 1);
     }
@@ -27,7 +27,7 @@ function addUp(num1, num2) {
 //function 5: multiply two numbers
 //when passing a string, the function will return NaN
 function multiplyThem(num1, num2) {
-  return num1 * num2;
+    return num1 * num2;
 }
 
 //function 6: Numbers, do what the string tells you to!
@@ -53,7 +53,7 @@ function doWhatYaTold(num1, num2, str) {
 }
 
 //function 7: repeat the string as many times as the num told!
-function repeatMe(str, num){
+function repeatMe(str, num) {
     return str.repeat(num);
 }
 
@@ -67,12 +67,12 @@ function reverseMe(str) {
 //function 9: factorial
 //If I pass a negative number, console prints 'error'
 function factorial(num) {
-    if (num < 0 ) {
+    if (num < 0) {
         return 'Number has to be a positive integer!';
     }
     else if (num === 0) {
         return 1;
-    } 
+    }
     else {
         return factorial(num - 1) * num;
     }
@@ -86,9 +86,9 @@ function getLongest(str) {
     var arrOfLength = [];
     for (var i = 0; i < arr.length; i++) {
         arrOfLength.push(arr[i].length);
-    
+
     }
-    
+
     var indexOfTheLongest = arrOfLength.indexOf(Math.max.apply(null, arrOfLength));
     return arr[indexOfTheLongest];
 }
@@ -96,13 +96,13 @@ function getLongest(str) {
 //function 11: capitalize the first letter of each word in a phrase
 function titleCase(str) {
     var strAllUppercase = str.toUpperCase();
-    
+
     var arr = strAllUppercase.split(' ');
-    
+
     for (var i = 0; i < arr.length; i++) {
         arr[i] = arr[i][0] + arr[i].substr(1).toLowerCase();
     }
-    
+
     return arr.join(" ");
 }
 
@@ -112,4 +112,10 @@ function findLargest(arr) {
         return b - a;
     })
     return arr[0];
+}
+
+//function 13: filter out the falsy values in an array
+
+function whoIsTrue(arr) {
+    return arr.filter(Boolean);
 }
