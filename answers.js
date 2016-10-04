@@ -30,4 +30,26 @@ function multiplyThem(num1, num2) {
   return num1 * num2;
 }
 
+//function 6: Numbers, do what the string tells you to!
+//
+function doWhatYaTold(num1, num2, str) {
+    var output = 0;
+    switch (str) {
+        case 'add':
+            // code
+            output = num1 + num2;
+            break;
+        case 'subtract':
+            output = Math.abs(num1 - num2);
+            break;
+        case 'mult':
+            output = num1 * num2;
+            break;
+        case 'div':
+            output = num1 / num2;
+            break;
+    }
+    return output;
+}
+
 
