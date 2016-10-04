@@ -126,3 +126,20 @@ function sumUp(arr) {
         return a + b;
     }, 0)
 }
+
+//function 15: return an array that contains only the unique values from two given arrays
+function findUnique(arr1, arr2) {
+
+    var arr = arr1.concat(arr2);
+    
+    arr.sort(function(a, b) {
+            return a - b;
+        })
+
+    for (var i = arr.length; i >= 0; i--) {
+        if (arr[i] === arr[i - 1]) {
+            arr.splice(i, 1);
+        }
+    }
+    return arr;
+}
