@@ -119,3 +119,10 @@ function findLargest(arr) {
 function whoIsTrue(arr) {
     return arr.filter(Boolean);
 }
+
+//function 14: sum of all numbers in an array
+function sumUp(arr) {
+    return arr.reduce(function(a, b) {
+        return a + b;
+    }, 0)
+}
