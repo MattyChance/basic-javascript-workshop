@@ -56,3 +56,10 @@ function doWhatYaTold(num1, num2, str) {
 function repeatMe(str, num){
     return str.repeat(num);
 }
+
+//function 8: return the reversed string
+function reverseMe(str) {
+    var arr = str.split('');
+    arr = arr.reverse();
+    return arr.join('');
+}
