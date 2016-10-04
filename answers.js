@@ -52,4 +52,7 @@ function doWhatYaTold(num1, num2, str) {
     return output;
 }
 
-
+//function 7: repeat the string as many times as the num told!
+function repeatMe(str, num){
+    return str.repeat(num);
+}
