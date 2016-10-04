@@ -67,7 +67,10 @@ function reverseMe(str) {
 //function 9: factorial
 //If I pass a negative number, console prints 'error'
 function factorial(num) {
-    if (num === 0) {
+    if (num < 0 ) {
+        return 'Number has to be a positive integer!';
+    }
+    else if (num === 0) {
         return 1;
     } 
     else {
