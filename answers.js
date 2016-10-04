@@ -77,3 +77,18 @@ function factorial(num) {
         return factorial(num - 1) * num;
     }
 }
+
+//function 10: return the longest word in a phrase
+function getLongest(str) {
+    //change the string into an array
+    var arr = str.split(" ");
+    //find the index of the longest word in that arr
+    var arrOfLength = [];
+    for (var i = 0; i < arr.length; i++) {
+        arrOfLength.push(arr[i].length);
+    
+    }
+    
+    var indexOfTheLongest = arrOfLength.indexOf(Math.max.apply(null, arrOfLength));
+    return arr[indexOfTheLongest];
+}
