@@ -143,3 +143,14 @@ function findUnique(arr1, arr2) {
     }
     return arr;
 }
+
+//mini challenge
+function handmadeMapMethod(arr, func) {
+
+    for (var i = 0; i < arr.length; i++) {
+        //arr[i] pass this as an argument in func
+        arr[i] = func(arr[i]);
+    }
+    
+    return arr;
+}
