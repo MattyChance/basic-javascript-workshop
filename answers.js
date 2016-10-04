@@ -17,3 +17,12 @@ function getCharacter(str, num) {
         return str.substr(num - 1, 1);
     }
 }
+
+//function 4: add up two numbers
+//if I pass a string as an argument, the function will concatenate the two inputs
+function addUp(num1, num2) {
+    return num1 + num2;
+}
+
+
+
