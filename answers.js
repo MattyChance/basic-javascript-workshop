@@ -8,3 +8,12 @@ function firstLetter(str) {
 function lastCharacter(str) {
     return str.substring(str.length, str.length - 1);
 }
+
+//function 3: return the character at indexOf
+function getCharacter(str, num) {
+    str = str.replace(/\s+/g, '');
+    
+    if (num > 0) {
+        return str.substr(num - 1, 1);
+    }
+}
