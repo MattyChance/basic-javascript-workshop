@@ -24,5 +24,10 @@ function addUp(num1, num2) {
     return num1 + num2;
 }
 
+//function 5: multiply two numbers
+//when passing a string, the function will return NaN
+function multiplyThem(num1, num2) {
+  return num1 * num2;
+}
 
 
