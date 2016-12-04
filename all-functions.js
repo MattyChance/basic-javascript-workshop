@@ -65,3 +65,52 @@ function factorial(num) {
 }
 
 // console.log(factorial(3));
+
+//capitalize
+function capitalize(phrase) {
+	var newPhraseInArray = phrase.toLowerCase().split(' ').map(function(word) {
+		return word[0].toUpperCase() + word.slice(1);
+	})
+	return newPhraseInArray.join(' ');
+}
+
+//Write a function that takes an array and returns the largest number of the array
+function findTheLargest(arr) {
+	// return Math.max.apply(null, arr);
+	return arr.reduce(function(prev, curr) {
+		return prev < curr ? curr : prev;
+	})
+}
+
+// console.log(findTheLargest([3, 45, 8]));
+
+//Write a function that takes an array, and returns a filtered array
+function onlyTruthy(arr) {
+	// return arr.filter(Boolean);
+	return arr.filter(function(value) {
+		if(value) {
+			return value;
+		}
+	});
+}
+// console.log(onlyTruthy([undefined, 3, 'hello', NaN]))
+
+function onlyUnique(arr1, arr2) {
+	return arr1.concat(arr2).reduce(function(prev, curr) {
+		if (prev.indexOf(curr) === -1) {
+			prev.push(curr);
+		}
+		return prev;
+	}, []);
+}
+
+// console.log(onlyUnique([1, 2, 3], [2,3,4, 8]));
+
+function DIYmap(arr, somefunction) {
+	for (var i = 0; i < arr.length; i++) {
+		arr[i] = somefunction(arr[i]);
+	}
+	return arr;
+}
+
+// console.log(DIYmap([1, 2, 3], function(x){return x * 3}))
